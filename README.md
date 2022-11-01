@@ -10,7 +10,7 @@ Start tomcat:
 
 
 
-(To make TOKMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS) 
+(To make TOMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS) 
  search for context.xml
 # find / -name context.xml
 
@@ -57,7 +57,13 @@ TO SET User & Password:
   </tomcat-users>
 (((((((EXAMPLE)))))))))))
 
+After that restart tomcat services to effect these changes
+
+# ./shutdown.sh
+# ./startup.sh
+
 If you want to change tomcat port number:
+STOP THE SERVICE FIRST
 # cd conf/
 # vi server.xml
 
