@@ -8,15 +8,18 @@ Start tomcat:
 
 # ./startup.sh
 
-(connecting outside world to edit context.xml) 
+
+
+(To make TOKMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS) 
  search for context.xml
 # find / -name context.xml
 
 
-you will get three files 
+you will get these files, MAKE CHANHES AS SHOWN.(add)
 
 /home/ec2-user/apache-tomcat-9.0.58/webapps/host-manager/META-INF/context.xml
 /home/ec2-user/apache-tomcat-9.0.58/webapps/manager/META-INF/context.xml
+
 
 vi /home/ec2-user/apache-tomcat-9.0.58/webapps/host-manager/META-INF/context.xml
 vi /home/ec2-user/apache-tomcat-9.0.58/webapps/manager/META-INF/context.xml
@@ -29,7 +32,8 @@ After that restart tomcat services to effect these changes
 
 # ./shutdown.sh
 # ./startup.sh
-User & Password Edit:
+
+TO SET User & Password:
 # cd ../
 # cd conf
 # vi tomcat-users.xml
