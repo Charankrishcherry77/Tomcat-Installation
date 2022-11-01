@@ -10,7 +10,7 @@ Start tomcat:
 
 
 
-(To make TOMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS) 
+******************(To make TOMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS)******************************** 
  search for context.xml
 # find / -name context.xml
 
@@ -33,7 +33,7 @@ After that restart tomcat services to effect these changes
 # ./shutdown.sh
 # ./startup.sh
 
-**TO SET USERNAME & Password:**
+***********************************TO SET USERNAME & Password:***************************************
 # cd ../
 # cd conf
 # vi tomcat-users.xml
@@ -62,7 +62,7 @@ After that restart tomcat services to effect these changes
 # ./shutdown.sh
 # ./startup.sh
 
-**If you want to change tomcat port number:**
+********************************If you want to change tomcat port number:*************************************************
 STOP THE SERVICE FIRST
 # cd conf/
 # vi server.xml
@@ -72,7 +72,7 @@ Edit section under Connector port 8080 to 8090 (ur wish)
 To start Tomcat:
 # ./startup.sh
 
-**Jenkins to Tomcat integration:**
+**************************Jenkins to Tomcat integration:******************************************
 
 --> Install deploy to container plugin
 --> Under post build action -> deploy war or ear container 
