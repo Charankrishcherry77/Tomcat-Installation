@@ -10,12 +10,12 @@ Start tomcat:
 
 
 
-******************(To make TOMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS)******************************** 
+******************(To make TOMCAT AVAILABLE TO outside world)(SO THEY CAN DEPLOY ARTIFACTS)(hostmanager,manager files)******************************** 
  search for context.xml
 # find / -name context.xml
 
 
-you will get these files, MAKE CHANHES AS SHOWN.(add)
+you will get these files, MAKE CHANGHES AS SHOWN.(add)
 
 /home/ec2-user/apache-tomcat-9.0.58/webapps/host-manager/META-INF/context.xml
 /home/ec2-user/apache-tomcat-9.0.58/webapps/manager/META-INF/context.xml
