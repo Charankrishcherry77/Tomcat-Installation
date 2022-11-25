@@ -33,7 +33,7 @@ After that restart tomcat services to effect these changes
 # ./shutdown.sh
 # ./startup.sh
 
-***********************************TO SET USERNAME & Password:***************************************
+***********************************TO SET USERNAME & Password:(users.xml)***************************************
 # cd ../
 # cd conf
 # vi tomcat-users.xml
@@ -62,7 +62,7 @@ After that restart tomcat services to effect these changes
 # ./shutdown.sh
 # ./startup.sh
 
-********************************If you want to change tomcat port number:*************************************************
+********************************If you want to change tomcat port number:(server.xml)*************************************************
 STOP THE SERVICE FIRST
 # cd conf/
 # vi server.xml
